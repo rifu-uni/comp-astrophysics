@@ -1,0 +1,15 @@
+[workspace]
+authors = ["rifusaki <martinagmejia@gmail.com>"]
+channels = ["conda-forge"]
+name = "comp-astrophysics"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = ">=3.14.3,<3.15"
+numpy = ">=2.4.2,<3"
+ipython = ">=9.10.0,<10"
+ipykernel = ">=7.2.0,<8"
+matplotlib = ">=3.10.8,<4"
