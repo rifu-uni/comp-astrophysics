@@ -1,3 +1,5 @@
 # pixi environments
 .pixi
 .DS_Store
+
+*.code-workspace
