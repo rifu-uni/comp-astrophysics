@@ -1,12 +1,10 @@
 import numpy as np
-from typing import Callable, Tuple, Optional
+from typing import Callable, Tuple
 
-# ODE Integrator Loop
 StepFn = Callable[
     [Callable[[float, np.ndarray], np.ndarray], float, np.ndarray, float],
     np.ndarray,
 ]
-
 
 def integrate(
     f: Callable[[float, np.ndarray], np.ndarray],
@@ -15,9 +13,7 @@ def integrate(
     h: float,
     step_fn: StepFn,
 ) -> Tuple[np.ndarray, np.ndarray]:
-    """
-    Generic fixed-step ODE integrator.
-    """
+    """Generic fixed-step ODE integrator."""
     t0, tf = t_span
     direction = 1.0 if tf >= t0 else -1.0
     h_signed = direction * abs(h)
@@ -40,8 +36,6 @@ def integrate(
 
     return np.array(t_vals), np.array(y_vals)
 
-
-# ODE Step Functions
 def euler_step(
     f: Callable[[float, np.ndarray], np.ndarray],
     t: float,
@@ -50,7 +44,6 @@ def euler_step(
 ) -> np.ndarray:
     """Forward Euler step."""
     return y + h * np.atleast_1d(f(t, y))
-
 
 def rk2_midpoint_step(
     f: Callable[[float, np.ndarray], np.ndarray],
@@ -62,7 +55,6 @@ def rk2_midpoint_step(
     k1 = np.atleast_1d(f(t, y))
     k2 = np.atleast_1d(f(t + h / 2, y + h / 2 * k1))
     return y + h * k2
-
 
 def rk4_runge_step(
     f: Callable[[float, np.ndarray], np.ndarray],
@@ -77,6 +69,8 @@ def rk4_runge_step(
     k4 = np.atleast_1d(f(t + h, y + h * k3))
     return y + (h / 6.0) * (k1 + 2 * k2 + 2 * k3 + k4)
 
+# Alias for backward compatibility with the notebook
+rk4_step = rk4_runge_step
 
 def rk4_kutta_step(
     f: Callable[[float, np.ndarray], np.ndarray],
@@ -90,52 +84,3 @@ def rk4_kutta_step(
     k3 = np.atleast_1d(f(t + 2 * h / 3, y - h / 3 * k1 + h * k2))
     k4 = np.atleast_1d(f(t + h, y + h * k1 - h * k2 + h * k3))
     return y + (h / 8.0) * (k1 + 3 * k2 + 3 * k3 + k4)
-
-
-# Root-Finder Loop
-RootStepFn = Callable[
-    [Callable[[float], float], Optional[Callable[[float], float]], tuple],
-    tuple,
-]
-
-
-def find_root(
-    f: Callable[[float], float],
-    df: Optional[Callable[[float], float]],
-    state0: tuple,
-    step_fn: RootStepFn,
-    tol: float = 1e-8,
-    max_iter: int = 200,
-) -> float:
-    """Generic scalar root-finder."""
-    state = state0
-    for _ in range(max_iter):
-        x = state[-1]
-
-        if abs(f(x)) < tol:
-            return x
-
-        state = step_fn(f, df, state)
-
-    raise RuntimeError(
-        f"find_root did not converge after {max_iter} iterations "
-        f"(last |f(x)| = {abs(f(x)):.3e})"
-    )
-
-
-# Root-Finder Step Functions
-def secant_step(
-    f: Callable[[float], float],
-    df: Optional[Callable[[float], float]],
-    state: Tuple[float, float],
-) -> Tuple[float, float]:
-    """Secant method step."""
-    x_prev, x_curr = state
-    f_curr = f(x_curr)
-    f_prev = f(x_prev)
-
-    if f_curr - f_prev == 0.0:
-        raise ZeroDivisionError(f"Denominator is zero in secant step at x={x_curr}")
-
-    x_next = x_curr - f_curr * (x_curr - x_prev) / (f_curr - f_prev)
-    return (x_curr, x_next)
