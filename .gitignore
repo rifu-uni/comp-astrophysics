@@ -6,3 +6,5 @@
 
 **/__pycache__/
 **/*.pyc
+
+projects/01\ solarwind/docs/*.md
