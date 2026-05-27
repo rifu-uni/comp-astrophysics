@@ -1,7 +1,7 @@
 # comp-astrophysics
 repo for computational astrophysics shenanigans
 
-![izutsumi](https://data.izutsumi.art/manga/SmartSelect_20240620_140647_Gallery.webp)
+![izutsumi](https://data.izutsumi.art/manga/SmartSelect_20240620_142824_Gallery.jpg)
 
 ## Homework Exercises — Complete Task List with Scores
 
@@ -101,19 +101,3 @@ repo for computational astrophysics shenanigans
 | ------------- | ----- |
 | Complete  | 23 |
 | New | 9  |
-
-**All 43 tasks now have notebook coverage.** The 6 daily variants scored 0 are covered by weekly notebooks:
-- D280201, D280203, D280204 → `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` (trapezoid, Simpson)
-- D110402, D110403 → `homework/02 differential equations/2-2_rc-circuit.ipynb` (from-scratch RK2, RK4)
-- S090501 → `homework/04 partial differential equations/4-1_diffusion.ipynb` (scored 0 but notebook exists)
-
-**New notebooks created (all coverage gaps filled):**
-- `homework/02 differential equations/2-4_stellarOdes.ipynb` — S180401 + S180402
-- `homework/02 differential equations/2-5_symplectic.ipynb` — D090502 + D090503
-- `homework/03 optimization/3-2_astroOptimization.ipynb` — S250401 + S250402 + S250403
-- `homework/04 partial differential equations/4-1_diffusion.ipynb` — D090501 + S090501
-- `homework/04 partial differential equations/4-2_elliptic.ipynb` — D160501 + S160501 + S160502(FEM)
-- `homework/05 magnetohydrodynamics/5-1_advection.ipynb` — S160502(Advección)
-
-**Original README exercise not in CSV:** \#1 (Diferenciación y errores) — appears in `homework/01 algorithms/01 differentiation/1-1-4_exercises.ipynb` but has no corresponding task in the grading table.
-
