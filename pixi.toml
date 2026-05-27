@@ -21,6 +21,7 @@ vl-convert-python = ">=2.0.0rc1,<3"
 jupyter = ">=1.1.1,<2"
 nbconvert = ">=7.17.1,<8"
 sympy = ">=1.14.0,<2"
+pyside6 = ">=6.9,<7"
 
 [pypi-dependencies]
 py-pluto = ">=1.1.5, <2"
