@@ -13,12 +13,12 @@ repo for computational astrophysics shenanigans
 | 2   | D280202   | Método del trapecio simple              | D    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` |
 | 3   | D280203   | Método del trapecio compuesto           | D    | **New** | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` |
 | 4   | D280204   | Método de Simpson                       | D    | **New** | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` |
-| 5   | S280201   | Integración analítica del cohete        | S    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` §0 |
-| 6   | S280202   | Integrar usando Riemann y=x³            | S    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` §1 |
-| 7   | S280203   | Regla del trapezoide cohete             | S    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` §2 |
-| 8   | S280204   | Regla del trapezoide compuesto cohete   | S    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` §3 |
-| 9   | S280205   | Regla de Simpson 1/3 cohete             | S    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` §4 |
-| 10  | S280206   | Regla Simpson 3/8 función propia        | S    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` §5 |
+| 5   | S280201   | Integración analítica del cohete        | S    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` |
+| 6   | S280202   | Integrar usando Riemann y=x³            | S    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` |
+| 7   | S280203   | Regla del trapezoide cohete             | S    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` |
+| 8   | S280204   | Regla del trapezoide compuesto cohete   | S    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` |
+| 9   | S280205   | Regla de Simpson 1/3 cohete             | S    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` |
+| 10  | S280206   | Regla Simpson 3/8 función propia        | S    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` |
 
 ### Raíces (Mar 14)
 
@@ -27,9 +27,9 @@ repo for computational astrophysics shenanigans
 | 11  | D140301   | Método de la bisección                                | D    | Complete | `homework/01 algorithms/03 root-finding/1-3_rootFinding.ipynb` |
 | 12  | D140302   | Método de Raphson (Newton-Raphson)                    | D    | Complete | `homework/01 algorithms/03 root-finding/1-3_rootFinding.ipynb` |
 | 13  | D140303   | Método de la secante                                  | D    | Complete | `homework/01 algorithms/03 root-finding/1-3_rootFinding.ipynb` |
-| 14  | S140301   | Bisección pelota flotante                             | S    | Complete | `homework/01 algorithms/03 root-finding/1-3_rootFinding.ipynb` §1 |
-| 15  | S140302   | Newton-Raphson pelota flotante                        | S    | Complete | `homework/01 algorithms/03 root-finding/1-3_rootFinding.ipynb` §2 |
-| 16  | S140303   | Secante pelota flotante                               | S    | Complete | `homework/01 algorithms/03 root-finding/1-3_rootFinding.ipynb` §3 |
+| 14  | S140301   | Bisección pelota flotante                             | S    | Complete | `homework/01 algorithms/03 root-finding/1-3_rootFinding.ipynb` |
+| 15  | S140302   | Newton-Raphson pelota flotante                        | S    | Complete | `homework/01 algorithms/03 root-finding/1-3_rootFinding.ipynb` |
+| 16  | S140303   | Secante pelota flotante                               | S    | Complete | `homework/01 algorithms/03 root-finding/1-3_rootFinding.ipynb` |
 | 17  | S140304   | Newton-Raphson ecuaciones simultáneas no lineales     | S    | Complete | `homework/01 algorithms/04 nonlinear-systems/1-4_newtonSimultaneous.ipynb` |
 
 ### Regresión + EDO (Mar 28)
@@ -91,7 +91,7 @@ repo for computational astrophysics shenanigans
 | 40  | D160501   | Cilindro de pared gruesa                                   | D    | Complete | `homework/04 partial differential equations/4-2_elliptic.ipynb`|
 | 41  | S160501   | Potencial gravitacional en un disco protoplanetario        | S    | **New**     | `homework/04 partial differential equations/4-2_elliptic.ipynb`|
 | 42  | S160502   | Advección 1D                                               | S    | **New**     | `homework/05 magnetohydrodynamics/5-1_advection.ipynb`|
-| 43  | S160502   | FEM para la ecuación de Poisson gravitacional (1D)         | S    | **New**     | `homework/04 partial differential equations/4-2_elliptic.ipynb`|
+| 43  | S160503   | FEM para la ecuación de Poisson gravitacional (1D)         | S    | **New**     | `homework/04 partial differential equations/4-2_elliptic.ipynb`|
 
 ---
 
@@ -99,5 +99,5 @@ repo for computational astrophysics shenanigans
 
 | Status        | Count |
 | ------------- | ----- |
-| Complete  | 23 |
-| New | 9  |
+| Complete  | 29 |
+| New | 14 |
