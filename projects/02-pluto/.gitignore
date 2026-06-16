@@ -1,0 +1,9 @@
+# Project 2 data and outputs
+output/
+build/
+plots/
+__pycache__/
+*.pyc
+*.o
+data.*.dbl
+dbl.out

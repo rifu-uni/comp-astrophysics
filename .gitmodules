@@ -1,0 +1,4 @@
+[submodule "tools/pluto"]
+	path = tools/pluto
+	url = https://github.com/rifu-uni/pluto.git
+	branch = course/project2
