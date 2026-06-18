@@ -9,7 +9,7 @@ repo for computational astrophysics shenanigans
 
 | #   | Task ID   | Exercise                                | Type | Status | Notebook |
 | --- | --------- | --------------------------------------- | ---- | ----- | -------- |
-| 1   | D280201   | Integración del cohete                  | D    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` §2-§3 |
+| 1   | D280201   | Integración del cohete                  | D    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` |
 | 2   | D280202   | Método del trapecio simple              | D    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` |
 | 3   | D280203   | Método del trapecio compuesto           | D    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` |
 | 4   | D280204   | Método de Simpson                       | D    | Complete | `homework/01 algorithms/02 integration/1-2_integrationMethods.ipynb` |
