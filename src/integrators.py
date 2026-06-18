@@ -80,6 +80,16 @@ def euler_step(
     """
     return y + h * np.atleast_1d(f(t, y))
 
+def rk2_heun_step(
+    f: Callable[[float, np.ndarray], np.ndarray],
+    t: float,
+    y: np.ndarray,
+    h: float,
+) -> np.ndarray:
+    k1 = np.atleast_1d(f(t, y))
+    k2 = np.atleast_1d(f(t + h, y + h * k1))
+    return y + 0.5 * h * (k1 + k2)
+
 def rk2_midpoint_step(
     f: Callable[[float, np.ndarray], np.ndarray],
     t: float,

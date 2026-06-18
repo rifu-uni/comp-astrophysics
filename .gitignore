@@ -9,4 +9,15 @@
 
 # projects
 **/docs/
-projects/02-pluto/output/
+projects/**/output/
+
+# pluto build artifacts
+*.o
+*.npz
+*.dbl
+*.vtk
+*.out
+**/pluto/build/
+
+**/alfven/*.png
+**/alfven/*.gif
