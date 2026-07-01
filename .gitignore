@@ -19,5 +19,9 @@ projects/**/output/
 *.out
 **/pluto/build/
 
+# latex
+*.aux
+*.log
+
 **/alfven/*.png
 **/alfven/*.gif

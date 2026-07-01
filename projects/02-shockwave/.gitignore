@@ -3,7 +3,12 @@ output/
 build/
 plots/
 __pycache__/
+.mplconfig/
 *.pyc
 *.o
 data.*.dbl
 dbl.out
+*.bbl
+*.fdb_latexmk
+*.fls
+*.gz

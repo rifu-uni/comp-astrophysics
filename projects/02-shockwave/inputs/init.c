@@ -36,7 +36,7 @@
         -11.2536    \\ \noalign{\medskip}
          1          \\ \noalign{\medskip}
         B_{\rm pre} \\ \noalign{\medskip}
-       -B_{\rm pre} \\ \noalign{\medskip}
+        B_{\rm pre} \\ \noalign{\medskip}
     \end{array}\right)
      \quad\mathrm{for}\quad x > 0.6\,,\qquad
   \f]
